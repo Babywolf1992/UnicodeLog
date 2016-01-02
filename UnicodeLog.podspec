@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "UnicodeLog"
   s.version          = "0.1.0"
-  s.summary          = "A short description of UnicodeLog."
+  s.summary          = "让 NSArray NSDictionary 及其子类输出中文 description"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+让 NSArray NSDictionary 及其子类输出中文 description
                        DESC
 
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/UnicodeLog"
@@ -24,17 +25,12 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "BigPi" => "wangdapishuai@163.com" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/UnicodeLog.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '1.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'UnicodeLog' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,0 +1,14 @@
+PODS:
+  - UnicodeLog (0.1.0)
+
+DEPENDENCIES:
+  - UnicodeLog (from `../`)
+
+EXTERNAL SOURCES:
+  UnicodeLog:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UnicodeLog: 25c79a61816ad92c71df5ac12befda324c6a9a36
+
+COCOAPODS: 0.39.0
