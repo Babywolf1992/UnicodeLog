@@ -20,15 +20,13 @@ Pod::Spec.new do |s|
 让 NSArray NSDictionary 及其子类输出中文 description
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/UnicodeLog"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/Big-Pi/UnicodeLog"
   s.license          = 'MIT'
   s.author           = { "BigPi" => "wangdapishuai@163.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/UnicodeLog.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Big-Pi/UnicodeLog", :tag => s.version.to_s }
 
   s.platform     = :ios, '1.0'
   s.requires_arc = true
-
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'UnicodeLog' => ['Pod/Assets/*.png']
