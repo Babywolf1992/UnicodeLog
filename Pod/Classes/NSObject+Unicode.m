@@ -14,6 +14,7 @@
 +(void)load{
     [self swizzleDescription:[NSArray class]];
     [self swizzleDescription:[NSDictionary class]];
+    [self swizzleDescription:[NSSet class]];
 }
 
 + (NSString *)stringByReplaceUnicode:(NSString *)string
@@ -89,6 +90,21 @@
 #pragma mark - NSDictionary
 
 @implementation NSDictionary (Unicode)
+
+- (NSString *)swizzleDescription {
+    return [NSObject stringByReplaceUnicode:[self swizzleDescription]];
+}
+
+- (NSString *)swizzleDescriptionWithLocale:(nullable id)locale {
+    return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale]];
+}
+
+- (NSString *)swizzleDescriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
+    return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale indent:level]];
+}
+@end
+
+@implementation NSSet (Unicode)
 
 - (NSString *)swizzleDescription {
     return [NSObject stringByReplaceUnicode:[self swizzleDescription]];
