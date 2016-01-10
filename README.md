@@ -2,7 +2,6 @@
 
 ###NSArray NSDictionary 及其子类输出中文 description
 
-[![CI Status](http://img.shields.io/travis/BigPi/UnicodeLog.svg?style=flat)](https://travis-ci.org/BigPi/UnicodeLog)
 [![Version](https://img.shields.io/cocoapods/v/UnicodeLog.svg?style=flat)](http://cocoapods.org/pods/UnicodeLog)
 [![License](https://img.shields.io/cocoapods/l/UnicodeLog.svg?style=flat)](http://cocoapods.org/pods/UnicodeLog)
 [![Platform](https://img.shields.io/cocoapods/p/UnicodeLog.svg?style=flat)](http://cocoapods.org/pods/UnicodeLog)
@@ -37,7 +36,7 @@ pod "UnicodeLog"
 
 ## Author
 
-BigPi, wangdapishuai@163.com
+BigPi wangdapishuai@163.com
 
 ## License
 
