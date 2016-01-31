@@ -35,18 +35,12 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wundeclared-selector"
     //remove undeclared selector warning
-
-    SEL swizzleDescription=@selector(swizzleDescription);
-    SEL swizzleDescriptionWithLocale=@selector(swizzleDescriptionWithLocale:);
+    
     SEL swizzleDescriptionWithLocaleIndent=@selector(swizzleDescriptionWithLocale:indent:);
 #pragma clang diagnostic pop
     
-    SEL description=@selector(description);
-    SEL descriptionWithLocale=@selector(descriptionWithLocale:);
     SEL descriptionWithLocaleIndent=@selector(descriptionWithLocale:indent:);
     
-    [self swizzleMethod:class originalSelector:description swizzledSelector:swizzleDescription];
-    [self swizzleMethod:class originalSelector:descriptionWithLocale swizzledSelector:swizzleDescriptionWithLocale];
     [self swizzleMethod:class originalSelector:descriptionWithLocaleIndent swizzledSelector:swizzleDescriptionWithLocaleIndent];
 }
 
@@ -76,14 +70,6 @@
 
 @implementation NSArray (Unicode)
 
-- (NSString *)swizzleDescription {
-    return [NSObject stringByReplaceUnicode:[self swizzleDescription]];
-}
-
-- (NSString *)swizzleDescriptionWithLocale:(nullable id)locale {
-    return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale]];
-}
-
 - (NSString *)swizzleDescriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale indent:level]];
 }
@@ -93,14 +79,6 @@
 
 @implementation NSDictionary (Unicode)
 
-- (NSString *)swizzleDescription {
-    return [NSObject stringByReplaceUnicode:[self swizzleDescription]];
-}
-
-- (NSString *)swizzleDescriptionWithLocale:(nullable id)locale {
-    return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale]];
-}
-
 - (NSString *)swizzleDescriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale indent:level]];
 }
@@ -109,14 +87,6 @@
 #pragma mark - NSSet
 
 @implementation NSSet (Unicode)
-
-- (NSString *)swizzleDescription {
-    return [NSObject stringByReplaceUnicode:[self swizzleDescription]];
-}
-
-- (NSString *)swizzleDescriptionWithLocale:(nullable id)locale {
-    return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale]];
-}
 
 - (NSString *)swizzleDescriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale indent:level]];
