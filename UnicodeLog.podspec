@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UnicodeLog"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "让 NSArray NSDictionary 及其子类输出中文 description"
 
 # This description is used to generate tags and improve search results.
