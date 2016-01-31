@@ -10,13 +10,15 @@
 #import <objc/runtime.h>
 
 @implementation NSObject (Unicode)
-
+#if DEBUG
 +(void)load{
     [self swizzleDescription:[NSArray class]];
     [self swizzleDescription:[NSDictionary class]];
     [self swizzleDescription:[NSSet class]];
 }
+#endif
 
+//http://stackoverflow.com/questions/21436956/objc-ios-how-to-retrieve-unicode-hex-code-for-character
 + (NSString *)stringByReplaceUnicode:(NSString *)string
 {
     NSMutableString *convertedString = [string mutableCopy];
@@ -103,6 +105,8 @@
     return [NSObject stringByReplaceUnicode:[self swizzleDescriptionWithLocale:locale indent:level]];
 }
 @end
+
+#pragma mark - NSSet
 
 @implementation NSSet (Unicode)
 

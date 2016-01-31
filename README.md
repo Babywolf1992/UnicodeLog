@@ -10,7 +10,8 @@
 ---
 ## Usage
 
-**无需配置和注意**
+**无需配置和注意**  
+**只在Debug模式时生效**
 
 	NSArray *array=@[@"呦西",@"粑粑",@"hehe"];
 	NSLog(@"%@",array);
@@ -37,6 +38,9 @@ pod "UnicodeLog"
 ## Author
 
 BigPi wangdapishuai@163.com
+
+## Thanks To
+[0x5e](https://github.com/0x5e)
 
 ## License
 
